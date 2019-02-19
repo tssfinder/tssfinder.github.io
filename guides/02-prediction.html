@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>TSSFinder</title>
+    <title>Prediction</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/index.html">TSSFinder</a>
+          <a class="navbar-brand" href="/index.html">MYOP</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,7 +42,7 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://github.com/tssfinder/tssfinder"><span class="glyphicon fa fa-github-alt" aria-hidden="true"></span></a></li>
+            <li><a href="https://github.com/myopdev/myop"><span class="glyphicon fa fa-github-alt" aria-hidden="true"></span></a></li>
             <li><a href="/index.html#contact"><span class="glyphicon fa fa-envelope-o" aria-hidden="true"></span></a></li>
           </ul>
 
@@ -51,32 +51,94 @@
     </nav>
 
     <div class="wrapper">
+    <div class="container tops-doc-body">
+  <div class="row">
+    <div class="col-md-3 tops-doc">
+      <h1>User Guide</h1>
+      <ol>
+        
+        <li><a href="/guides/01-setup.html">Setup</a></li>
+        
+        <li><a href="/guides/02-prediction.html">Prediction</a></li>
+        
+        <li><a href="/guides/03-training.html">Training</a></li>
+        
+        <li><a href="/guides/04-tutorial.html">Tutorial</a></li>
+        
+        <li><a href="/guides/05-pre-trained-models.html">Pre-Trained Models</a></li>
+        
+        <li><a href="/guides/06-accuracy.html">Accuracy</a></li>
+        
+      </ol>
+    </div>
+    <div class="col-md-9 tops-page">
 
-<div class="tops-cover">
-  <div class="first_page container text-center">
-    <h1>TSSFinder</h1>
-    <h2>Ab Initio Prediction of the Core Promoter in Eukaryotes</h2>
-    <p>TSSFinder is a new software for TSS prediction that is faster and with higher accuracy than previously published applications.</p>
-    <a href="download.html" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-save" aria-hidden="true"></span> Download</a>
-  </div>
+      <h1 id="prediction">Prediction</h1>
+
+<p>First you need to choose which model you want to use. To list all available models type <code class="highlighter-rouge">myop</code>. It will show you something like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>|--------------------------------|
+| MYOP - Make Your Own Predictor |
+|          version 1.0.0         |
+|--------------------------------|
+
+Available programs:
+  * myop-predict
+  * myop-train
+  * myop-add-genome
+  * myop-add-transcriptome
+
+Available genomes:
+  * A.thaliana
+  * C.elegans
+  * D.melanogaster
+  * D.rerio
+  * H.sapiens
+  * M.musculus
+  * O.sativa
+  * P.falciparum
+  * R.norvegicus
+  * Z.mays
+
+Available transcriptomes:
+
+
+</code></pre>
 </div>
 
-<a name="contact"></a>
-<div class="tops-cover tops-contact">
-  <div class="first_page container text-center">
-    <h1>For more information</h1>
-    <p>contact <strong>Alan Mitchell Durham (email: aland at usp.br)</strong></p>
-    <p>or use our <a href="https://github.com/tssfinder/tssfinder/issues">issue tracker</a></p>
-  </div>
+<p>In this case, there are 10 available genomes and you can choose any of them.</p>
+
+<p>So, if you have a sequence called <code class="highlighter-rouge">seq1.fa</code> and you want to use the human model, type:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>myop-predict -g H.sapiens -f seq1.fa
+</code></pre>
+</div>
+
+<p>For more help, try:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>myop-predict --help
+</code></pre>
 </div>
 
 
+      <p class="text-center">
+        
+          <a href="/guides/01-setup.html">prev</a>
+        
+        |
+        
+          <a href="/guides/03-training.html">next</a>
+        
+      </p>
+    </div>
+  </div>
+</div>
 
     </div>
 
     <div class="tops-footer">
       <div class="first_page container">
-        <p class="text-center">Copyright 2018 TSSFinder</p>
+        <p class="text-center">Copyright 2016 MYOP</p>
       </div>
     </div>
 

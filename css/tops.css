@@ -1,0 +1,248 @@
+html,body{
+    height: 100%
+}
+
+body {
+  font-size: 16px;
+  color: #66595c;
+}
+
+a {
+  color: #337ab7;
+}
+
+a:hover {
+  color: #337ab7;
+}
+
+.btn p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.btn small {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: #FFFFFF;
+  font-size: 11px;
+}
+
+.first_page.container {
+  max-width: 900px;
+}
+
+.tops-navbar {
+  background-color: #777777;
+  border-color: #777777;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.tops-navbar .navbar-nav .active a {
+  background-color: #635a5c;
+  color: #abd3c3;
+}
+
+.tops-navbar .navbar-nav .active a:hover {
+  background-color: #635a5c;
+  color: #abd3c3;
+}
+
+.tops-navbar .navbar-nav li a {
+  color: #ffffff;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.tops-navbar .navbar-nav li a:hover {
+  color: #abd3c3;
+}
+
+.tops-navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.tops-feature .glyphicon {
+  font-size: 70px;
+  color: #d34532;
+}
+
+.tops-feature h1 {
+  font-size: 18px;
+}
+
+.tops-highlight .col-md-6 {
+  float:none;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:-4px;
+}
+
+.tops-highlight h1 {
+  font-size: 28px;
+}
+
+.tops-cover {
+  background-color: #EEEEFF;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.tops-cover .btn {
+  margin-top: 30px;
+}
+
+.tops-cover h1 {
+  font-size: 100px;
+  font-weight: lighter;
+}
+
+.tops-cover h2 {
+  font-size: 34px;
+  font-weight: lighter;
+}
+
+.tops-cover p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.tops-features {
+  background-color: #CCDDDD;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.tops-features h1 {
+  font-weight: lighter;
+  font-size: 65px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.tops-features .row {
+  margin-bottom: 70px;
+  margin-top: 60px;
+}
+
+.tops-features .row h1 {
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.tops-highlights {
+  background-color: #ffffff;
+  padding-top: 70px;
+}
+
+.tops-highlights .row {
+  margin-bottom: 70px;
+}
+.tops-contact {
+  background-color: #EEEEFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.tops-contact h1 {
+  padding-bottom: 20px;
+}
+
+.tops-contact p {
+  font-weight: normal;
+}
+
+.tops-footer {
+  background-color: #EEEEFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tops-number {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 350px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-height: 350px;
+  margin-top: -120px;
+  color: #337ab7;
+}
+
+.tops-doc-index {
+  margin-top: 30px;
+}
+
+.tops-doc-index .title {
+  margin-bottom: 50px;
+}
+
+.tops-doc h1 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #dddddd;
+}
+
+.tops-page {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.tops-page h1 {
+  font-size: 40px;
+}
+
+.tops-page h1, h2, h3, h4, h5 {
+  margin-bottom: 30px;
+}
+
+.tops-page p {
+  margin-bottom: 20px;
+}
+
+.table {
+  font-size: 15px;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #ede9e1;
+}
+
+td strong {
+  color: #40a977;
+  font-style: normal;
+  font-weight: normal;
+}
+
+td em {
+  color: #d34532;
+  font-style: normal;
+}
+
+td code {
+  font-style: italic;
+  background: none;
+  color: #66595c;
+}
+
+.myop-logo {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.tops-doc-index {
+  background-color: #FFFFFF
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: 0px;
+  margin-top: -130px;
+  padding-top: 130px;
+}
