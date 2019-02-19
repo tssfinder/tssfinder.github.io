@@ -69,35 +69,7 @@
 
       <h1 id="training">Training</h1>
 
-<p>You can train your own models, that is, you can use your sequences to train a new predictor. For this you need a (multi) fasta file containing the genomic sequence(s) and a description of the genes in a <strong>GTF</strong> file (for more details on GTF format, use this <a href="http://www.ensembl.org/info/website/upload/gff.html">link</a>), which is a standard format for training gene predictors.</p>
-
-<p><strong>GTF</strong> files should describe all the CDS’s of each gene and the positon of the start and stop codons. You can check your gtf file using the <a href="http://mblab.wustl.edu/software.html">validate_gtf.pl</a> script.</p>
-
-<p>If you have your genomic sequences in the file named <code class="highlighter-rouge">genome.fasta</code> and your <strong>GTF</strong> entries in the file named  <code class="highlighter-rouge">genome.gtf</code>, you can train your predictor using the command:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>myop-train -g genome.gtf -f genome.fa -o my_org
-</code></pre>
-</div>
-
-<p>in this case, the training procedure will create a directory named <code class="highlighter-rouge">my_org</code> with the complete description of the model. All names (fasta file, gtf file, model directory)  can be changed by the user.</p>
-
-<p>After training you can use the model as is (see the instructions for running gene predictions),</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>myop-predict -l /Path/To/my_org/ -f seq.fa
-</code></pre>
-</div>
-
-<p>or you can add the new model to your installation. To do this you should use the command:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>myop-add-genome /Path/To/my_org/
-</code></pre>
-</div>
-
-<p>With this you can run predicitons with <strong>MYOP</strong> by just using the name you created for your model.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>myop-predict -g my_org -f seq.fa
-</code></pre>
-</div>
+      <p>Comming soon</p>
 
 
       <p class="text-center">
@@ -106,7 +78,7 @@
         
         |
         
-          <a href="/guides/04-tutorial.html">next</a>
+          
         
       </p>
     </div>
