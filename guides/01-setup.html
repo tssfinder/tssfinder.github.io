@@ -75,81 +75,12 @@
 
       <h1 id="setup">Setup</h1>
 
-<p>First you will need to <a href="/download.html">download</a> the last version of MYOP software. It includes:</p>
+<p>First you will need to <a href="/download.html">download</a> the last version of TSSFinder software. It includes:</p>
 
 <ul>
-  <li>MYOP command line tools</li>
-  <li><a href="http://tops.ml">ToPS</a> command line tools</li>
-  <li>Some pre-trained gene models</li>
+  <li>TSSFinder command line tools</li>
+  <li>Some pre-trained models</li>
 </ul>
-
-<h2 id="install-myop-for-mac-os-x">Install MYOP for Mac OS X</h2>
-
-<ol>
-  <li>Get the OS X installer <a href="/download.html">here</a></li>
-  <li>Doble-click the downloaded package. It will open a window like the following: <img src="/img/dmg.png" alt="dmg" /></li>
-  <li>Drag and drop the MYOP icon to the Applications folder.</li>
-</ol>
-
-<p>After installing, check your installation:</p>
-
-<ol>
-  <li>Go to you Applications folder</li>
-  <li>Double-click MYOP icon. It will open a Terminal window.</li>
-  <li>Type <code class="highlighter-rouge">myop</code> and hit <code class="highlighter-rouge">&lt;return&gt;</code>. It should list all MYOP’s commands and all available genomes and transcriptomes.</li>
-</ol>
-
-<h2 id="install-myop-for-ubuntu-linux">Install MYOP for Ubuntu Linux</h2>
-
-<ol>
-  <li>Get the <code class="highlighter-rouge">.deb</code> package <a href="/download.html">here</a></li>
-  <li>Open a terminal window and type <code class="highlighter-rouge">dpkg -i myop-v1.0.0.deb</code></li>
-</ol>
-
-<p>After installing, check your installation:</p>
-
-<ol>
-  <li>Open a terminal window</li>
-  <li>Type <code class="highlighter-rouge">myop</code> and hit <code class="highlighter-rouge">&lt;return&gt;</code>. It should list all MYOP’s commands and all available genomes and transcriptomes.</li>
-</ol>
-
-<h2 id="building-from-source">Building from Source</h2>
-
-<p>Firt install all the following requirements:</p>
-
-<ol>
-  <li><a href="https://github.com/ayoshiaki/tops">ToPS</a></li>
-  <li><a href="https://github.com/ayoshiaki/segseq">SegSeq</a></li>
-  <li><a href="https://git-scm.com/">Git</a></li>
-  <li><a href="http://search.cpan.org/~dlux/Parallel-ForkManager-0.7.5/ForkManager.pm">Perl - ForkManager</a></li>
-  <li><a href="http://www.bioperl.org">BioPerl</a></li>
-</ol>
-
-<p>After you have installed the required software, you can install MYOP by following the instructions below:</p>
-
-<ol>
-  <li>
-    <p>MYOP is available from our GitHub repository.</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/myopdev/myop.git
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Copy the <code class="highlighter-rouge">myop</code> folder to <code class="highlighter-rouge">/usr/local/</code> folder.</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>sudo cp -r myop /usr/local
-</code></pre>
-    </div>
-  </li>
-  <li>
-    <p>Add the following line at the end of the <code class="highlighter-rouge">.profile</code> file.</p>
-
-    <div class="highlighter-rouge"><pre class="highlight"><code>export PATH=$PATH:/usr/local/myop/scripts
-</code></pre>
-    </div>
-  </li>
-</ol>
 
 
       <p class="text-center">
