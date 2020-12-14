@@ -43,3 +43,27 @@ tssfinder --model <MODEL-DIR> \
           --genome <GENOME-FASTA> \
           --output <OUTPUT-DIR>
 ```
+## File Examples
+
+The input for TSSFinder must be in two formats: FASTA and BED (tab).
+
+For example the FASTA format which may look like:
+```
+>genome_fasta
+CTGATTTTCGTTGGCCCTAGATTTCATCAATCTCTAATTTCATTTTGTATTTTTATCGTTTTGA
+AATTTAAATGTCAAGTCCCAACGGTCCTCTGATCTCGGCAGTTTTTGTGTTATGTAAATGACTA
+```
+The FASTA format must be a multi-fasta file, generally the organism's genome. For more information for [FASTA file](https://en.wikipedia.org/wiki/FASTA_format).
+
+For example the BED (tab) format which may look like:
+```
+xxx.bed 
+Chr	Coord_a	Coord_b	Name_locus	1º_tss	strand
+1	1597842	1597843	EXEM1G05440_1	1	-
+1	1766149	1766150	EXEM1G05840_1	1	-
+1	1775654	1775655	EXEM1G05880_1	1	+
+1	1823346	1823347	EXEM1G06010_1	1	+
+1	1855962	1855963	EXEM1G06120_1	1	+
+
+```
+The BED (tab) format is used for files for start, tss and tata-box. For more information for [BED file](https://m.ensembl.org/info/website/upload/bed.html).
