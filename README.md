@@ -16,7 +16,7 @@ TSSFinder is a software for TSS prediction that is faster and with higher accura
 - Install python's requirements:
 
 ```
-pip install -r requirements.txtx
+pip install -r requirements.txt
 ```
 
 - Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`
