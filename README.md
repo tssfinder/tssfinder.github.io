@@ -1,5 +1,3 @@
-# tssfinder.github.io
-
 # TSSFinder
 
 TSSFinder is a software for TSS prediction that is faster and with higher accuracy than previously published applications. TSSFinder can also be customized to novel organisms using as few as 500 full transcripts and their corresponding genomic locations.
