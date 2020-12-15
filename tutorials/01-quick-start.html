@@ -245,11 +245,11 @@ PROMOTER#1	PROMOTER#1	9.70172
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`
-tssfinder-train --model athaliana/models/athaliana.1/ \          #<OUTPUT-DIR> 
-                --start athaliana/athaliana.dataset1.start.bed \ #<START-CODON-BED> 
-                --tata athaliana/athaliana.tata.bed \            #<TATA-BOX-BED> 
-                --tss athaliana/athaliana.dataset1.start.bed \   #<TSS-BED> 
-                --genome athaliana/athaliana.tair10.fa \         #<GENOME-FASTA> 
+tssfinder-train --model athaliana/models/athaliana.1/ \          <OUTPUT-DIR> 
+                --start athaliana/athaliana.dataset1.start.bed \ <START-CODON-BED> 
+                --tata athaliana/athaliana.tata.bed \            <TATA-BOX-BED> 
+                --tss athaliana/athaliana.dataset1.start.bed \   <TSS-BED> 
+                --genome athaliana/athaliana.tair10.fa \         <GENOME-FASTA> 
 </code></pre>
 </div>
 
@@ -258,10 +258,10 @@ tssfinder-train --model athaliana/models/athaliana.1/ \          #<OUTPUT-DIR>
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`
-tssfinder --model athaliana/models/athaliana.1/ \          #<MODEL-DIR> \
-          --start athaliana/athaliana.dataset0.start.bed \ #<START-CODON-BED> \
-          --genome athaliana/athaliana.tair10.fa \         #<GENOME- FASTA> \
-          --output athaliana/output_athaliana.model_0 \    #<OUTPUT-DIR> * The output directory must be created before.
+tssfinder --model athaliana/models/athaliana.1/ \          <MODEL-DIR> \
+          --start athaliana/athaliana.dataset0.start.bed \ <START-CODON-BED> \
+          --genome athaliana/athaliana.tair10.fa \         <GENOME- FASTA> \
+          --output athaliana/output_athaliana.model_0 \    <OUTPUT-DIR> * The output directory must be created before.
 </code></pre>
 </div>
 
