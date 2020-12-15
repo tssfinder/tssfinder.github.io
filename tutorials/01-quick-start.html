@@ -184,7 +184,7 @@ TGGTTTCGTGTTCCCTTGACCATGATGATTTTTAGCCACGTCCAGCTACTTTG
       
       
 <ul>
-  <li><code class="highlighter-rouge">out_file.train</code>TSSFinder training output files: observation.myop-prom transitions.myop-prom. These files store the main characteristics of the TSS signal and the Core promoter region.</li>
+  <li><code class="highlighter-rouge">out_file.train</code>, TSSFinder training output files: observation.myop-prom transitions.myop-prom. These files store the main characteristics of the TSS signal and the Core promoter region.</li>
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ head athaliana/models/athaliana.1/observation.myop-prom
@@ -209,7 +209,6 @@ x[-3,0]=2;x[2,0]=0;	TATA+1	0.00231838
 x[-3,0]=2;x[2,0]=0;	TATA+2	-0.0814799
 x[-3,0]=2;x[2,0]=0;	TATA+3	-0.0521071
 x[-3,0]=2;x[2,0]=0;	PROMOTER#1	-0.0646568
-
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ head athaliana/models/athaliana.1/transitions.myop-prom
 
@@ -236,12 +235,14 @@ PROMOTER#1	TSS-3	4.95724
 PROMOTER#1	PROMOTER#1	9.70172
 
 </code></pre>
-</div></div>
+</div>
+</code></pre>
+</div>
   
 
 
 <ul>
-  <li><code class="highlighter-rouge">Training command</code>, a EXAMPLE file which describe all the command-line for Training of the TSS </li>
+  <li><code class="highlighter-rouge">Training command</code>, a EXAMPLE file which describe all the command-line for Training of the TSSFinder </li>
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`
@@ -254,7 +255,7 @@ tssfinder-train --model athaliana/models/athaliana.1/ \          <OUTPUT-DIR>
 </div>
 
 <ul>
-  <li><code class="highlighter-rouge">Prediction command</code>, a EXAMPLE file which describe all the command-line for Prediction of the TSS </li>
+  <li><code class="highlighter-rouge">Prediction command</code>, a EXAMPLE file which describe all the command-line for Prediction of the TSSFinder </li>
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`
