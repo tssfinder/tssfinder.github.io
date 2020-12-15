@@ -125,6 +125,7 @@ CTATCAAAGGTCCCTCGTGACATCCTTGAAGTGGTCTCTTCCACTGGAATCTCTCTTTA
 TCACGAGGTCGCCAGTAAGCATCGATCTTCTCATCCTTATTCCCTTTTTATTTCCTTTA
 TTAGAGAGAGAGAAAGAGTCTCTCTAAGTATTTAGTTTCTGAAACAGGTAGGAAATGCA
 TGGTTTCGTGTTCCCTTGACCATGATGATTTTTAGCCACGTCCAGCTACTTTG
+...
 </code></pre>
 </div>
 
@@ -143,6 +144,7 @@ TGGTTTCGTGTTCCCTTGACCATGATGATTTTTAGCCACGTCCAGCTACTTTG
 2	7341118	  7341119	  AT2G16930_1	1	+
 4	14606004	14606005	AT4G29870_1	1	+
 5	16385303	16385304	AT5G40890_1	1	-
+...
 </code></pre>
 </div>
 
@@ -161,6 +163,7 @@ TGGTTTCGTGTTCCCTTGACCATGATGATTTTTAGCCACGTCCAGCTACTTTG
 1	2174791	2174792	AT1G07090_1	1	-
 1	2219378	2219379	AT1G07220_1	1	-
 1	2222777	2222778	AT1G07230_1	1	-
+...
 </code></pre>
 </div>
 
@@ -179,12 +182,26 @@ TGGTTTCGTGTTCCCTTGACCATGATGATTTTTAGCCACGTCCAGCTACTTTG
 1	1662216	1662217	AT1G05575_1	1	-
 1	1664464	1664465	AT1G05577_1	1	-
 1	1669320	1669321	AT1G05590_1	1	+
+...
 </code></pre>
 </div>
-      
-      
+     
+     
 <ul>
-  <li><code class="highlighter-rouge">out_file.train</code>, TSSFinder training output files: observation.myop-prom transitions.myop-prom. These files store the main characteristics of the TSS signal and the Core promoter region.</li>
+  <li><code class="highlighter-rouge">Training command</code>, a EXAMPLE file which describe all the command-line for Training of the TSSFinder. Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`. </li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+$ tssfinder-train --model athaliana/models/athaliana.1/ \          <OUTPUT-DIR> 
+                --start athaliana/athaliana.dataset1.start.bed \ <START-CODON-BED> 
+                --tata athaliana/athaliana.tata.bed \            <TATA-BOX-BED> 
+                --tss athaliana/athaliana.dataset1.start.bed \   <TSS-BED> 
+                --genome athaliana/athaliana.tair10.fa \         <GENOME-FASTA> 
+</code></pre>
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">out_file.train</code>, TSSFinder training output files: observation.myop-prom and transitions.myop-prom. These files store the main characteristics of the TSS signal and the Core promoter region.</li>
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ head athaliana/models/athaliana.1/observation.myop-prom
@@ -242,31 +259,53 @@ PROMOTER#1	PROMOTER#1	9.70172
 
 
 <ul>
-  <li><code class="highlighter-rouge">Training command</code>, a EXAMPLE file which describe all the command-line for Training of the TSSFinder. </li>
+  <li><code class="highlighter-rouge">Prediction command</code>, a EXAMPLE file which describe all the command-line for Prediction of the TSSFinder. Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`.</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`
-tssfinder-train --model athaliana/models/athaliana.1/ \          <OUTPUT-DIR> 
-                --start athaliana/athaliana.dataset1.start.bed \ <START-CODON-BED> 
-                --tata athaliana/athaliana.tata.bed \            <TATA-BOX-BED> 
-                --tss athaliana/athaliana.dataset1.start.bed \   <TSS-BED> 
-                --genome athaliana/athaliana.tair10.fa \         <GENOME-FASTA> 
-</code></pre>
-</div>
-
-<ul>
-  <li><code class="highlighter-rouge">Prediction command</code>, a EXAMPLE file which describe all the command-line for Prediction of the TSSFinder. </li>
-</ul>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$ Add `tssfinder` and `tssfinder/bin/cli` folders to the `PATH`
-tssfinder --model athaliana/models/athaliana.1/ \          <MODEL-DIR> \
+<div class="highlighter-rouge"><pre class="highlight"><code>
+$ tssfinder --model athaliana/models/athaliana.1/ \          <MODEL-DIR> \
           --start athaliana/athaliana.dataset0.start.bed \ <START-CODON-BED> \
           --genome athaliana/athaliana.tair10.fa \         <GENOME- FASTA> \
           --output athaliana/output_athaliana.model_0 \ <OUTPUT-DIR> *The output directory must be created before.
 </code></pre>
 </div>
 
+<ul>
+  <li><code class="highlighter-rouge">out_file.prediction</code>, TSSFinder prediction output files: out.tss.bed and out.tata.bed. These files store the main characteristics of the TSS signal and the Core promoter region.</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ head athaliana/output_athaliana.model_0/out.tss.bed
+
+1	1597861	1597862	AT1G05440_1	1	-
+1	1766210	1766211	AT1G05840_1	1	-
+1	1775639	1775640	AT1G05880_1	1	+
+1	1822638	1822639	AT1G06010_1	1	+
+1	1855921	1855922	AT1G06120_1	1	+
+1	2016002	2016003	AT1G06580_1	1	-
+1	2105038	2105039	AT1G06850_1	1	+
+1	2174821	2174822	AT1G07090_1	1	-
+1	2219461	2219462	AT1G07220_1	1	-
+1	2222823	2222824	AT1G07230_1	1	-
+...
+</code></pre>
+</div>
       
+<div class="highlighter-rouge"><pre class="highlight"><code>$ head athaliana/output_athaliana.model_0/out.tata.bed
+
+1	1847847	1847848	AT1G06090_1	1	+
+1	1851440	1851441	AT1G06100_1	1	+
+1	2339417	2339418	AT1G07600_1	1	-
+1	2524044	2524045	AT1G08090_1	1	+
+1	2613276	2613277	AT1G08290_1	1	-
+1	2630887	2630888	AT1G08340_1	1	+
+1	2658685	2658686	AT1G08430_1	1	+
+1	2909085	2909086	AT1G09030_1	1	-
+1	3794288	3794289	AT1G11300_1	1	+
+1	4003810	4003811	AT1G11870_1	1	+
+...
+</code></pre>
+</div>
+    
       
 
     </div>
