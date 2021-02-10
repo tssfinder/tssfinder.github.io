@@ -16,7 +16,7 @@ For a small volume of data, we offer the web service [here](http://sucest-fun.or
 
 ### Ubuntu
 
-- Download the pre-compiled package for Linux [here](https://github.com/tssfinder/tssfinder.github.io/releases/download/v1.0.0/tssfinder-linux.zip)
+- Download the pre-compiled package for Linux [here](https://github.com/tssfinder/tssfinder.github.io/releases/download/v1.0.0/tssfinder.v1.0.0.zip)
 
 - Install python's requirements:
 
