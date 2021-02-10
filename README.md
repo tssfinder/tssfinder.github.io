@@ -1,6 +1,11 @@
 # TSSFinder
 
-TSSFinder is a software for TSS prediction that is faster and with higher accuracy than previously published applications. TSSFinder can also be customized to novel organisms using as few as 500 full transcripts and their corresponding genomic locations.
+TSSFinder is a software for TSS prediction that is faster and with higher accuracy than previously published applications. TSSFinder can also be customized to novel organisms using as few as 125 full transcripts and their corresponding genomic locations.
+
+# TSSFinder web service
+
+For the web service version, TSSFinder can be accessed [here](http://sucest-fun.org/wsapp/tssfinder/)
+
 
 ## Requirements
 
