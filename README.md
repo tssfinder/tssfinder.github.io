@@ -4,7 +4,7 @@ TSSFinder is a software for TSS prediction that is faster and with higher accura
 
 # TSSFinder web service
 
-For the web service version, TSSFinder can be accessed [here](http://sucest-fun.org/wsapp/tssfinder/)
+For a small volume of data, we offer the web service [here](http://sucest-fun.org/wsapp/tssfinder/)
 
 
 ## Requirements
